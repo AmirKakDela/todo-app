@@ -1,0 +1,59 @@
+.user-page-wrapper {
+    width: 70%;
+    height: 85%;
+    background-color: rgba(255, 255, 255, 0.76);
+    border-radius: 10px;
+    padding: 20px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-page {
+    width: 95%;
+    height: 95%;
+    border: 0.5px solid black;
+}
+
+.user-page__header {
+    height: 35%;
+    width: 100%;
+    border: 0.5px solid black;
+    display: flex;
+}
+
+.user-page__photo {
+    height: 140px;
+    width: 140px;
+    border: 2px solid green;
+    margin: 0 0 10px 0;
+    border-radius: 10px;
+}
+
+.user-page__name {
+    font-size: 20px;
+    margin-bottom: 15px;
+    span {
+        font-weight: bold;
+    }
+}
+
+
+.user-page__button {
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: rgb(8, 11, 68);
+    color: white;
+    font-weight: bold;
+    transition: all 0.25s ease-in-out;
+    &:hover {
+        border: 2px solid rgb(8, 11, 68);
+        color: rgb(8, 11, 68);
+        background-color: rgb(252, 252, 252);
+    }
+}

@@ -1,0 +1,88 @@
+.header {
+    height: 60px;
+    background-color: #333;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.header__container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    padding: 5px 15px;
+    background-color: #fff;
+    width: 120px;
+    font-weight: bold;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+.header__menu {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__auth {
+    cursor: pointer;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.493);
+    display: flex;
+    align-items: center;
+    transition: all 0.15s ease-in-out;
+    &:hover {
+        color: rgb(255, 255, 255);
+    }
+    span {
+        margin-left: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.header__profile {
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    transition: all 0.15s ease-in-out;
+    &:hover {
+        color: rgba(255, 255, 255, 0.493);
+    }
+    span {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 770px) {
+    header {
+        height: 70px;
+    }
+
+    .header__logo {
+        height: 35px;
+        width: 110px;
+        font-size: 14px;
+    }
+}

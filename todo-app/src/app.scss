@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(70deg, blue, pink);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+

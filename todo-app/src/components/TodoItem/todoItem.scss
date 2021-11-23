@@ -1,0 +1,116 @@
+.todo-item {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin: 15px auto 0 auto;
+    transition: all 0.25s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.774);
+    padding: 4px 7px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 2px;
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+        bottom: 0.1px solid black;
+    }
+}
+
+.todo-item__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 7px;
+        font-size: 21px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        border-radius: 50%;
+    }
+    .todo-item_not-done {
+        color: #000;
+        &:hover {
+            color: #fff;
+            background-color: #000;
+        }
+    }
+    .todo-item_done {
+        color: rgb(153, 152, 152);
+        &:hover {
+            color: #000;
+        }
+    }
+
+    .todo-item__title {
+        font-weight: 500;
+        transition: all 0.2s ease-in-out;
+        user-select: none;
+        &_done {
+            text-decoration: line-through;
+            text-decoration-color: rgb(143, 143, 143);
+            color: rgb(143, 143, 143);
+        }
+    }
+}
+
+.todo-item__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 7px;
+        cursor: pointer;
+        transition: all 0.12s ease-in-out;
+    }
+    .actions__delete {
+        font-size: 19px;
+        &:hover {
+            color: rgb(170, 40, 40);
+        }
+    }
+    .actions__edit {
+        font-size: 22px;
+        &:hover {
+            color: rgb(7, 73, 102);
+        }
+    }
+}
+
+.todo-item__edit {
+    border: none;
+    border-bottom: black 1px solid;
+    width: 100%;
+    padding: 3px;
+    font-size: 1rem;
+    &:focus {
+        outline: none;
+        border-bottom: black 1px solid;
+    }
+}
+
+.actions__save-edit {
+    font-size: 23px;
+    &:hover {
+        color: rgb(7, 73, 102);
+    }
+}
+
+@media (max-width: 376px) {
+    .todo-item__main {
+        .todo-item__title {
+            font-size: 14px;
+        }
+        span {
+            font-size: 18px;
+            margin-right: 6px;
+        }
+    }
+
+}

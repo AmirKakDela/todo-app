@@ -7,7 +7,7 @@ export const arrayTodos = [
     {
         id: 2,
         title: 'Купить хлеб',
-        status: false
+        status: true
     },
     {
         id: 3,

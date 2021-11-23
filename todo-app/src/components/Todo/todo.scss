@@ -1,0 +1,58 @@
+.todo {
+    width: 70%;
+    height: 85%;
+    background-color: rgba(255, 255, 255, 0.76);
+    border-radius: 10px;
+    padding: 20px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.todo__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.todo__body {
+    width: 95%;
+    height: 92%;
+    margin: 10px auto;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    width: 7px;
+    background-color: rgb(21, 52, 82);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(232, 202, 247, 0.76);
+    border-radius: 10px;
+}
+
+@media (max-width: 785px) {
+    .todo {
+        width: 90%;
+        max-height: 97%;
+        height: 80%;
+    }
+}
+
+
+@media (max-width: 376px) {
+    .todo {
+        width: 90%;
+        max-height: 97%;
+        height: 80%;
+        margin-bottom: 50px;
+    }
+}
